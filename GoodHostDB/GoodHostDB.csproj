@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MixedMinimumRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -83,7 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs" />
+    <Compile Include="Model\Address.cs" />
     <Compile Include="Data.cs">
       <DependentUpon>Data.xsd</DependentUpon>
     </Compile>
@@ -92,23 +93,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Data.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Device.cs" />
-    <Compile Include="ModelGH.cs" />
-    <Compile Include="Offer.cs" />
-    <Compile Include="Place.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Model\Device.cs" />
+    <Compile Include="Migrations\202004131348343_MyMigration.cs" />
+    <Compile Include="Migrations\202004131348343_MyMigration.Designer.cs">
+      <DependentUpon>202004131348343_MyMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\ModelGH.cs" />
+    <Compile Include="Model\Offer.cs" />
+    <Compile Include="Model\Place.cs" />
+    <Compile Include="Model\Program.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Rating.cs" />
-    <Compile Include="Rent.cs" />
-    <Compile Include="Review.cs" />
-    <Compile Include="Role.cs" />
-    <Compile Include="Spec.cs" />
-    <Compile Include="User.cs" />
-    <Compile Include="UserRole.cs" />
+    <Compile Include="Model\Rating.cs" />
+    <Compile Include="Model\Rent.cs" />
+    <Compile Include="Model\Review.cs" />
+    <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\Spec.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserRole.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -121,6 +127,11 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202004131348343_MyMigration.resx">
+      <DependentUpon>202004131348343_MyMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
