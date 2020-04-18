@@ -15,6 +15,8 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -29,8 +31,6 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,6 +54,15 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="appsettings.Development.json" />
+    <None Include="appsettings.json" />
+    <None Include="bin\Debug\GoodHostDB.exe.config" />
+    <None Include="bin\Debug\netcoreapp2.1\appsettings.Development.json" />
+    <None Include="bin\Debug\netcoreapp2.1\appsettings.json" />
+    <None Include="bin\Debug\netcoreapp2.1\GoodHostDB.deps.json" />
+    <None Include="bin\Debug\netcoreapp2.1\GoodHostDB.runtimeconfig.dev.json" />
+    <None Include="bin\Debug\netcoreapp2.1\GoodHostDB.runtimeconfig.json" />
+    <None Include="bin\Debug\netcoreapp2.1\Properties\launchSettings.json" />
     <None Include="Data.xsc">
       <DependentUpon>Data.xsd</DependentUpon>
     </None>
@@ -65,11 +74,116 @@
     <None Include="Data.xss">
       <DependentUpon>Data.xsd</DependentUpon>
     </None>
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\GoodHostDB.csproj.CopyComplete" />
+    <None Include="obj\Debug\GoodHostDB.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\GoodHostDB.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\GoodHostDB.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.csproj.CopyComplete" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.genruntimeconfig.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.RazorAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.RazorCoreGenerate.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.RazorTargetAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.TagHelpers.input.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDB.TagHelpers.output.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\GoodHostDBcsprojAssemblyReference.cache" />
+    <None Include="obj\project.assets.json" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\Projekat_1.csproj.nuget.dgspec.json" />
+    <None Include="obj\Projekat_1.csproj.nuget.g.props" />
+    <None Include="obj\Projekat_1.csproj.nuget.g.targets" />
+    <None Include="obj\Release\GoodHostDB.csprojAssemblyReference.cache" />
     <None Include="packages.config" />
+    <None Include="Properties\launchSettings.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Views\Addresses\Create.cshtml" />
+    <None Include="Views\Addresses\Delete.cshtml" />
+    <None Include="Views\Addresses\Details.cshtml" />
+    <None Include="Views\Addresses\Edit.cshtml" />
+    <None Include="Views\Addresses\Index.cshtml" />
+    <None Include="Views\Devices\Create.cshtml" />
+    <None Include="Views\Devices\Delete.cshtml" />
+    <None Include="Views\Devices\Details.cshtml" />
+    <None Include="Views\Devices\Edit.cshtml" />
+    <None Include="Views\Devices\Index.cshtml" />
+    <None Include="Views\Home\About.cshtml" />
+    <None Include="Views\Home\Contact.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\Privacy.cshtml" />
+    <None Include="Views\Offers\Create.cshtml" />
+    <None Include="Views\Offers\Delete.cshtml" />
+    <None Include="Views\Offers\Details.cshtml" />
+    <None Include="Views\Offers\Edit.cshtml" />
+    <None Include="Views\Offers\Index.cshtml" />
+    <None Include="Views\Places\Create.cshtml" />
+    <None Include="Views\Places\Delete.cshtml" />
+    <None Include="Views\Places\Details.cshtml" />
+    <None Include="Views\Places\Edit.cshtml" />
+    <None Include="Views\Places\Index.cshtml" />
+    <None Include="Views\Ratings\Create.cshtml" />
+    <None Include="Views\Ratings\Delete.cshtml" />
+    <None Include="Views\Ratings\Details.cshtml" />
+    <None Include="Views\Ratings\Edit.cshtml" />
+    <None Include="Views\Ratings\Index.cshtml" />
+    <None Include="Views\Rents\Create.cshtml" />
+    <None Include="Views\Rents\Delete.cshtml" />
+    <None Include="Views\Rents\Details.cshtml" />
+    <None Include="Views\Rents\Edit.cshtml" />
+    <None Include="Views\Rents\Index.cshtml" />
+    <None Include="Views\Reviews\Create.cshtml" />
+    <None Include="Views\Reviews\Delete.cshtml" />
+    <None Include="Views\Reviews\Details.cshtml" />
+    <None Include="Views\Reviews\Edit.cshtml" />
+    <None Include="Views\Reviews\Index.cshtml" />
+    <None Include="Views\Roles\Create.cshtml" />
+    <None Include="Views\Roles\Delete.cshtml" />
+    <None Include="Views\Roles\Details.cshtml" />
+    <None Include="Views\Roles\Edit.cshtml" />
+    <None Include="Views\Roles\Index.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_CookieConsentPartial.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\Specs\Create.cshtml" />
+    <None Include="Views\Specs\Delete.cshtml" />
+    <None Include="Views\Specs\Details.cshtml" />
+    <None Include="Views\Specs\Edit.cshtml" />
+    <None Include="Views\Specs\Index.cshtml" />
+    <None Include="Views\UserRoles\Create.cshtml" />
+    <None Include="Views\UserRoles\Delete.cshtml" />
+    <None Include="Views\UserRoles\Details.cshtml" />
+    <None Include="Views\UserRoles\Edit.cshtml" />
+    <None Include="Views\UserRoles\Index.cshtml" />
+    <None Include="Views\Users\Create.cshtml" />
+    <None Include="Views\Users\Delete.cshtml" />
+    <None Include="Views\Users\Details.cshtml" />
+    <None Include="Views\Users\Edit.cshtml" />
+    <None Include="Views\Users\Index.cshtml" />
+    <None Include="Views\_ViewImports.cshtml" />
+    <None Include="Views\_ViewStart.cshtml" />
+    <None Include="wwwroot\lib\bootstrap\.bower.json" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\.bower.json" />
+    <None Include="wwwroot\lib\jquery-validation\.bower.json" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery\.bower.json" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -165,7 +279,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\Address.cs" />
+    <Compile Include="Controllers\AddressesController.cs" />
+    <Compile Include="Controllers\Api\UsersController.cs" />
+    <Compile Include="Controllers\DevicesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OffersController.cs" />
+    <Compile Include="Controllers\PlacesController.cs" />
+    <Compile Include="Controllers\RatingsController.cs" />
+    <Compile Include="Controllers\RentsController.cs" />
+    <Compile Include="Controllers\ReviewsController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\SpecsController.cs" />
+    <Compile Include="Controllers\UserRolesController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Data\DBInitializer.cs" />
+    <Compile Include="Data\GoodHostDBContext.cs" />
+    <Compile Include="Migrations\20200417001725_pva.cs" />
+    <Compile Include="Migrations\20200417001725_pva.Designer.cs">
+      <DependentUpon>20200417001725_pva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\GoodHostDBContextModelSnapshot.cs" />
+    <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Device.cs" />
+    <Compile Include="Models\ErrorViewModel.cs" />
+    <Compile Include="Models\ModelGH.cs" />
+    <Compile Include="Models\Offer.cs" />
+    <Compile Include="Models\Place.cs" />
+    <Compile Include="Models\Rating.cs" />
+    <Compile Include="Models\Rent.cs" />
+    <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Spec.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserRole.cs" />
     <Compile Include="Data.cs">
       <DependentUpon>Data.xsd</DependentUpon>
     </Compile>
@@ -174,28 +320,86 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Data.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Model\Device.cs" />
     <Compile Include="Migrations\202004131348343_MyMigration.cs" />
     <Compile Include="Migrations\202004131348343_MyMigration.Designer.cs">
       <DependentUpon>202004131348343_MyMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Model\ModelGH.cs" />
-    <Compile Include="Model\Offer.cs" />
-    <Compile Include="Model\Place.cs" />
-    <Compile Include="Model\Program.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\GoodHostDB.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\GoodHostDB.RazorAssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\GoodHostDB.RazorTargetAssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Addresses\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Addresses\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Addresses\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Addresses\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Addresses\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Devices\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Devices\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Devices\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Devices\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Devices\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Offers\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Offers\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Offers\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Offers\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Offers\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Places\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Places\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Places\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Places\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Places\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Ratings\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Ratings\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Ratings\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Ratings\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Ratings\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Rents\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Rents\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Rents\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Rents\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Rents\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Reviews\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Reviews\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Reviews\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Reviews\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Reviews\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Roles\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Roles\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Roles\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Roles\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Roles\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Specs\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Specs\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Specs\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Specs\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Specs\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\UserRoles\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\UserRoles\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\UserRoles\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\UserRoles\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\UserRoles\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Users\Create.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Users\Delete.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Users\Details.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Users\Edit.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\Users\Index.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Model\Rating.cs" />
-    <Compile Include="Model\Rent.cs" />
-    <Compile Include="Model\Review.cs" />
-    <Compile Include="Model\Role.cs" />
-    <Compile Include="Model\Spec.cs" />
-    <Compile Include="Model\User.cs" />
-    <Compile Include="Model\UserRole.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -213,6 +417,114 @@
     <EmbeddedResource Include="Migrations\202004131348343_MyMigration.resx">
       <DependentUpon>202004131348343_MyMigration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\GoodHostDB.Migrations.MyMigration.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\GoodHostDB.exe" />
+    <Content Include="bin\Debug\GoodHostDB.pdb" />
+    <Content Include="bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <Content Include="bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml" />
+    <Content Include="bin\Debug\Microsoft.Bcl.HashCode.dll" />
+    <Content Include="bin\Debug\Microsoft.Bcl.HashCode.xml" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Design.dll" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Design.xml" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.dll" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml" />
+    <Content Include="bin\Debug\Microsoft.EntityFrameworkCore.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Caching.Memory.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Caching.Memory.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.Binder.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.Binder.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Configuration.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.DependencyInjection.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.DependencyInjection.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Logging.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Logging.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Options.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Options.xml" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Primitives.dll" />
+    <Content Include="bin\Debug\Microsoft.Extensions.Primitives.xml" />
+    <Content Include="bin\Debug\netcoreapp2.1\GoodHostDB.dll" />
+    <Content Include="bin\Debug\netcoreapp2.1\GoodHostDB.pdb" />
+    <Content Include="bin\Debug\netcoreapp2.1\GoodHostDB.Views.dll" />
+    <Content Include="bin\Debug\netcoreapp2.1\GoodHostDB.Views.pdb" />
+    <Content Include="bin\Debug\System.Buffers.dll" />
+    <Content Include="bin\Debug\System.Buffers.xml" />
+    <Content Include="bin\Debug\System.Collections.Immutable.dll" />
+    <Content Include="bin\Debug\System.Collections.Immutable.xml" />
+    <Content Include="bin\Debug\System.ComponentModel.Annotations.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\Debug\System.Diagnostics.DiagnosticSource.xml" />
+    <Content Include="bin\Debug\System.Memory.dll" />
+    <Content Include="bin\Debug\System.Memory.xml" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.dll" />
+    <Content Include="bin\Debug\System.Numerics.Vectors.xml" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.dll" />
+    <Content Include="bin\Debug\System.Runtime.CompilerServices.Unsafe.xml" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Extensions.xml" />
+    <Content Include="GoodHostDB.csproj.user" />
+    <Content Include="obj\Debug\GoodHostDB.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\GoodHostDB.exe" />
+    <Content Include="obj\Debug\GoodHostDB.pdb" />
+    <Content Include="obj\Debug\netcoreapp2.1\GoodHostDB.dll" />
+    <Content Include="obj\Debug\netcoreapp2.1\GoodHostDB.pdb" />
+    <Content Include="obj\Debug\netcoreapp2.1\GoodHostDB.Views.dll" />
+    <Content Include="obj\Debug\netcoreapp2.1\GoodHostDB.Views.pdb" />
+    <Content Include="obj\Debug\netcoreapp2.1\GoodHostDBcsproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\Data.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Model1.Context.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Model1.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Model1.Designer.cs.dll" />
+    <Content Include="wwwroot\css\SignUp.css" />
+    <Content Include="wwwroot\css\site.css" />
+    <Content Include="wwwroot\css\site.min.css" />
+    <Content Include="wwwroot\favicon.ico" />
+    <Content Include="wwwroot\images\banner1.svg" />
+    <Content Include="wwwroot\images\banner2.svg" />
+    <Content Include="wwwroot\images\banner3.svg" />
+    <Content Include="wwwroot\js\site.js" />
+    <Content Include="wwwroot\js\site.min.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="wwwroot\lib\jquery\LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
